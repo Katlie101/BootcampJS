@@ -1,4 +1,4 @@
-let temperature; 
+let temperature = -1; 
 if (temperature < 0) {
     show = "It'S freezing!";
     console.log(show);
@@ -86,4 +86,20 @@ for (let i = 1; i<=20; i++) if (i%2===0) {
     console.log(i);
 }
 
+let total = 0
+const n = 100
+
+for (let i=1; i <= n; i++) {
+    total += i;
+}
+console.log(total);
+
+const numbers = [1, 2, 3, 4, 5];
+
+for ( let x in numbers) {
+    see = numbers[x];
+    console.log(see);
+}
+
+const numerics = [3, 7, 2, 5, 10, 6]
 
