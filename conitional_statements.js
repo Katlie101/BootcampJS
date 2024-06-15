@@ -101,5 +101,50 @@ for ( let x in numbers) {
     console.log(see);
 }
 
-const numerics = [3, 7, 2, 5, 10, 6]
+let numerics = [3, 7, 2, 5, 10, 6];
+let max = numerics[0];
+
+for (let i = 1; i < numerics.length; i++) {
+    if (numerics[i] > max) {
+        max = numerics[i];
+    }    
+}
+
+console.log(max);
+
+/*Exercise 4: While loops*/
+
+
+let input = 1;
+
+while ( input < 10) {
+    console.log(input);
+    input ++;
+}
+
+let even = 2;
+
+while ( even <= 20) {
+    console.log(even);
+    even +=2;
+}
+
+let num = 1;
+let sumNum = 0;
+
+while ( num <= 100) {
+    sumNum += num;
+    console.log(sumNum);
+    num ++; 
+}
+
+let z = 0;
+
+while ( z < 50) {
+    console.log(z);
+    z +=5;      
+}
+
+
+
 
