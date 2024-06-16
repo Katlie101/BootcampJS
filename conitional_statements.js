@@ -1,3 +1,6 @@
+/* Exercise 1:Temperature check*/
+
+//Ex 1.1
 let temperature = -1; 
 if (temperature < 0) {
     show = "It'S freezing!";
@@ -13,7 +16,7 @@ if (temperature < 0) {
     console.log(show);
 }
 
-/*Switch*/
+//Ex 1.2: Switch Expression
 let temp = 25;
 let message;
 
@@ -37,6 +40,7 @@ console.log(message)
 
 /*Exercise 2: Divisibility Check*/
 
+// 2.1
 let number = 12; 
 
 if (number%2===0 && number%3===0){
@@ -55,7 +59,8 @@ if (number%2===0 && number%3===0){
     console.log(show);
 }
 
-/*Switch Expression*/
+/* Ex 2.2: Switch Expression*/
+
 
 let digit = 17;
 let divisible;
@@ -77,15 +82,17 @@ console.log(divisible);
 
 /*Exercise 3: For Loops*/
 
-
+// Ex 3.1
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
 
+// Ex 3.2
 for (let i = 1; i<=20; i++) if (i%2===0) {
     console.log(i);
 }
 
+// Ex 3.3
 let total = 0
 const n = 100
 
@@ -94,6 +101,7 @@ for (let i=1; i <= n; i++) {
 }
 console.log(total);
 
+// Ex 3.4
 const numbers = [1, 2, 3, 4, 5];
 
 for ( let x in numbers) {
@@ -101,6 +109,7 @@ for ( let x in numbers) {
     console.log(see);
 }
 
+// Ex 3.5
 let numerics = [3, 7, 2, 5, 10, 6];
 let max = numerics[0];
 
@@ -115,6 +124,7 @@ console.log(max);
 /*Exercise 4: While loops*/
 
 
+// Ex 4.1
 let input = 1;
 
 while ( input < 10) {
@@ -122,6 +132,7 @@ while ( input < 10) {
     input ++;
 }
 
+// Ex 4.2
 let even = 2;
 
 while ( even <= 20) {
@@ -129,6 +140,7 @@ while ( even <= 20) {
     even +=2;
 }
 
+// Ex 4.3
 let num = 1;
 let sumNum = 0;
 
@@ -138,12 +150,63 @@ while ( num <= 100) {
     num ++; 
 }
 
+// Ex 4.4
 let z = 0;
 
 while ( z < 50) {
     console.log(z);
     z +=5;      
 }
+
+/*Exercise 5: Do while loop*/
+
+// Ex 5.1
+let q = 0;
+
+do {
+    q += 1;
+    console.log(q);    
+}
+while (q <10);
+
+// Ex 5.2
+let r = 1;
+let lastSum = 0;
+
+do {
+    lastSum += r;
+    r++;
+} while ( r <= 100);
+
+console.log(lastSum);
+
+// Ex 5.3
+let enterNumber;
+
+do {
+    if (enterNumber > 10);
+    enterNumber = window.prompt("Please enter a number that is greater than 10.");
+
+} while ( enterNumber < 10);
+console.log("Way to go!");
+
+// Ex 5.4
+
+let userNumber = 0;
+const correctNumber = 7;
+
+do {
+    userNumber = window.prompt("Guess the correct number between 1 and 10.");
+
+    if (userNumber < correctNumber && userNumber > correctNumber) {
+        window.prompt ("Not it! Try again.");
+        userNumber++;
+       
+    } else if ( userNumber == correctNumber) {
+        alert("Hooray! You guessed the correct number: " + correctNumber);
+    }
+   
+} while ( userNumber != correctNumber);
 
 
 

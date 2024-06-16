@@ -1,7 +1,9 @@
 /*Exercise 1: Numbers*/
 
+
 const normalNum = 20
 const floatNum = 10.0
+
 
 const newAdd = normalNum + 5; 
 const newSub = normalNum - 5;
@@ -37,10 +39,10 @@ const equalTo = num3 == num4;
 const greaterThan = num3 > num4;
 const lessThan = num3 < num4;
 const notEqual = num3 != num4;
-//console.log(equalTo);
-//console.log(greaterThan);
-//console.log(lessThan);
-//console.log(notEqual);
+console.log(equalTo);
+console.log(greaterThan);
+console.log(lessThan);
+console.log(notEqual);
 
 const x = 8;
 const y = 12;
